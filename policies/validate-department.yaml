@@ -1,7 +1,8 @@
 apiVersion: policy.jspolicy.com/v1beta1
 kind: JsPolicy
 metadata:
-  name: validate-pods.mycompany.tld
+  name: validate-department.mycompany.tld
 spec:
   operations: [CREATE, UPDATE]
-  resources: [pods]
+  resources: ["*"]
+  scope: Namespaced

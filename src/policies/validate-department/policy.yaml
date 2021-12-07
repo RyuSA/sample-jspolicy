@@ -1,9 +1,8 @@
 apiVersion: policy.jspolicy.com/v1beta1
 kind: JsPolicy
 metadata:
-  name: enforce-user-annotations.mycompany.tld
+  name: validate-department.mycompany.tld
 spec:
   operations: [CREATE, UPDATE]
   resources: ["*"]
   scope: Namespaced
-  mutating: true
